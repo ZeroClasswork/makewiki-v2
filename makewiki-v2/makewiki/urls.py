@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 """
 CHALLENGES:
@@ -23,6 +25,9 @@ CHALLENGES:
     2. Make sure Django doesn't give you any warnings or errors when you execute `python manage.py runserver`.
 """
 urlpatterns = [
+    # API Site
+    path('api/', include('api.urls')),
+
     # Admin Site
     path('admin/', admin.site.urls),
 
@@ -32,4 +37,4 @@ urlpatterns = [
 
     # Wiki App
     path('', include('wiki.urls')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
