@@ -25,7 +25,7 @@ SECRET_KEY = '1yct-t!2bnkgc7j59z+9cdd2k)@y+ftqor$!aya()3if^cnlo-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'meg-wiki-2.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'meg-wiki.herokuapp.com']
 
 
 # Application definition
