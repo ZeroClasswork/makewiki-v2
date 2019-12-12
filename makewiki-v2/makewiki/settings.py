@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'wiki',
-    'accounts'
+    'accounts',
 ]
 
 MIDDLEWARE = [
