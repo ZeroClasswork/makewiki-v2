@@ -1,1 +1,0 @@
-web: gunicorn makewiki-v2.makewiki.wsgi --log-file -
